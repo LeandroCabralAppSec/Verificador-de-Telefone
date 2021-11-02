@@ -1,0 +1,9 @@
+import phonenumbers
+
+from phonenumbers import geocoder
+
+phone = impit('digite o número no formato +5561985007542: ')
+
+phone_number = phonenumbers.parse(phone)
+
+print(geocoder.description_for_number(phone_number, 'pt'))
